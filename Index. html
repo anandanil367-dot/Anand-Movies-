@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CineVerse</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #0b0b0b;
+            color: white;
+        }
+
+        header {
+            padding: 20px;
+            background: #111;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: #e50914;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .search {
+            background: #222;
+            border: none;
+            padding: 10px;
+            border-radius: 6px;
+            color: white;
+            width: 120px;
+        }
+
+        .hero {
+            height: 300px;
+            padding: 30px;
+            background: linear-gradient(to right, #000, transparent),
+                        #333;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .hero h1 {
+            font-size: 35px;
+            margin: 0;
+        }
+
+        .hero p {
+            color: #ccc;
+        }
+
+        .btn {
+            background: #e50914;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            width: 120px;
+        }
+
+        h2 {
+            margin-left: 20px;
+        }
+
+        .movies {
+            display: flex;
+            overflow-x: auto;
+            gap: 15px;
+            padding: 20px;
+        }
+
+        .movie {
+            min-width: 140px;
+            background: #181818;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .movie img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .movie p {
+            padding: 10px;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">CineVerse</div>
+    <input class="search" type="text" placeholder="Search">
+</header>
+
+<section class="hero">
+    <h1>Welcome to CineVerse</h1>
+    <p>Discover your next favourite movie.</p>
+    <button class="btn">▶ Watch Now</button>
+</section>
+
+<h2>🔥 Trending Movies</h2>
+
+<div class="movies">
+
+    <div class="movie">
+        <img src="https://image.tmdb.org/t/p/w500/8cdWjvZQUExUUTzyp4t6EDMubfO.jpg">
+        <p>Deadpool & Wolverine</p>
+    </div>
+
+    <div class="movie">
+        <img src="https://image.tmdb.org/t/p/w500/q6y0Go1tsGEsmtFryDOJo3dEmqu.jpg">
+        <p>The Shawshank Redemption</p>
+    </div>
+
+    <div class="movie">
+        <img src="https://image.tmdb.org/t/p/w500/1XDDXPXGiI8id7MrUxK36ke7gkX.jpg">
+        <p>Interstellar</p>
+    </div>
+
+</div>
+
+<h2>🎬 Popular Movies</h2>
+
+<div class="movies">
+
+    <div class="movie">
+        <img src="https://image.tmdb.org/t/p/w500/rAiYTfKGqDCRIIqo664sY9XZIvQ.jpg">
+        <p>Top Gun: Maverick</p>
+    </div>
+
+    <div class="movie">
+        <img src="https://image.tmdb.org/t/p/w500/8UlWHLMpgZm9bx6QYh0NFoq67TZ.jpg">
+        <p>Wonder Woman</p>
+    </div>
+
+</div>
+
+</body>
+</html>
